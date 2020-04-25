@@ -1,0 +1,355 @@
+body {
+  height: 100%;
+}
+
+.navbar {
+  background-color: transparent;
+  padding-top: 0;
+}
+
+.navbar .navbar-brand {
+  background-color: #fff;
+  margin-right: 0;
+}
+
+.navbar .navbar-brand #logo {
+  margin-left: .4em;
+  max-width: 3.5em;
+  padding: .5em;
+}
+
+.navbar .navbar-nav {
+  background-color: #fff;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.navbar .navbar-nav .nav-item {
+  padding: 0 1em 0 1.5em;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #565656;
+  font-size: 2em;
+}
+
+.navbar .navbar-nav li {
+  display: table-cell;
+  position: relative;
+  padding: .5em 0;
+}
+
+.navbar .navbar-nav a:after {
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #767676;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.navbar .navbar-nav a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.navbar .navbar-toggler-icon .fas {
+  color: #000;
+}
+
+.home {
+  padding-top: 10em;
+  height: 100vh;
+}
+
+.home .right img {
+  max-width: 360px;
+}
+
+.home .left h1, .home .left h2, .about .left h1, .about .left h2, .contact .left h1, .contact .left h2 {
+  font-weight: normal;
+  color: #565656;
+  margin-top: 1em;
+  line-height: 1.3em;
+}
+
+.home .left h2, .about .left h2, .contact .left h2 {
+  margin-top: 9em;
+  font-size: 1.4em;
+  width: 95%;
+}
+
+.home .left .btn, .about .left .btn, .contact .left .btn {
+  border: 1px solid #ffed9a;
+  padding: .5em 1em .7em 1em;
+  margin-top: 2em;
+  color: #000;
+  font-size: 1.5em;
+  background-color: #ffed9a;
+  border-radius: .7em;
+}
+
+.home .left .btn a, .about .left .btn a, .contact .left .btn a {
+  text-decoration: none;
+  color: #000;
+}
+
+.home .left .btn:hover, .about .left .btn:hover, .contact .left .btn:hover {
+  background-color: #f2f2f2;
+  border: #565656 solid 1px;
+}
+
+.about img {
+  height: 100%;
+  padding-bottom: 3em;
+}
+
+.contact {
+  padding-top: 10em;
+  padding-bottom: 15em;
+}
+
+.contact .left h1 {
+  width: 80%;
+}
+
+.contact .left .contact-info {
+  font-size: 1.5em;
+  padding-top: 2em;
+  color: #767676;
+}
+
+.contact .left .contact-info a {
+  color: #767676;
+  font-weight: normal;
+  font-size: .8em;
+}
+
+.contact .right img {
+  height: 75%;
+}
+
+.showcase {
+  padding-top: 7em;
+}
+
+.showcase .showcase-image {
+  width: 20%;
+  padding-left: 1em;
+}
+
+.showcase .showcase-content {
+  padding: 2em 0 0 2em;
+  position: absolute;
+  right: 3em;
+  width: 35%;
+}
+
+.showcase .showcase-content h2, .showcase .showcase-content h3, .showcase .showcase-content p {
+  margin: 1em 0;
+  font-size: .9em;
+}
+
+.showcase .showcase-content h2 a, .showcase .showcase-content h3 a, .showcase .showcase-content p a {
+  color: #565656;
+}
+
+.carousel {
+  display: none;
+}
+
+.gallery {
+  margin-top: 4em;
+  padding-left: 4em;
+}
+
+.gallery .card {
+  margin: 2.5em 1.25em 0 1.25em;
+}
+
+.gallery .card a {
+  color: #565656;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #565656;
+}
+
+.footer li {
+  display: table-cell;
+  position: relative;
+  padding: .5em 0;
+}
+
+.footer a:after {
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #989898;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.footer a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+@media only screen and (max-width: 990px) {
+  .navbar {
+    padding: 0;
+    width: 80%;
+    font-size: .6em;
+  }
+  .navbar .navbar-brand #logo {
+    max-width: 2.5em;
+  }
+  .navbar .nav-item .nav-link {
+    padding-right: 0;
+  }
+  .home {
+    padding-left: 0;
+  }
+  .home .left h1 {
+    font-size: 1.5em;
+  }
+  .home .left .btn {
+    border: 1px solid #ffed9a;
+    padding: .7em;
+    margin-top: 3em;
+    color: #000;
+    font-size: 1.2em;
+    background-color: #ffed9a;
+    border-radius: 1em;
+  }
+  .home .right {
+    padding-left: 1em;
+  }
+  .home .right img {
+    width: 90%;
+  }
+  .about {
+    padding-bottom: 10em;
+  }
+  .about .left {
+    font-size: .8em;
+  }
+  .about .right {
+    padding-left: 6em;
+  }
+  .about .right img {
+    padding-top: 2em;
+    width: 100%;
+  }
+  .contact .left h1 {
+    font-size: 1.9em;
+  }
+  .contact .left .contact-info {
+    padding-top: .9em;
+  }
+  .contact .right img {
+    margin-left: 2em;
+    width: 90%;
+    height: 90%;
+  }
+  .showcase .showcase-image {
+    width: 19%;
+  }
+  .showcase .showcase-content {
+    padding-top: 1em;
+    font-size: .8em;
+  }
+  .gallery {
+    margin-top: 5em;
+    font-size: .6em;
+  }
+  .gallery .card-body {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 578px) {
+  .navbar {
+    width: 100vw;
+    background-color: #fff;
+  }
+  .home {
+    padding-top: 5em;
+  }
+  .home .left {
+    padding: 0 2em 0 2em;
+    text-align: center;
+  }
+  .home .right img {
+    padding: 3em;
+  }
+  .about .right {
+    padding: 0 3em 0 3em;
+  }
+  .about .right img {
+    padding: 4em 4em 2em 4em;
+  }
+  .about .left {
+    padding: 0 6em 0 6em;
+  }
+  .about .left h2 {
+    font-size: 1em;
+    margin-top: 0;
+  }
+  .contact {
+    padding-top: 5em;
+  }
+  .contact .right .row {
+    padding-bottom: 0;
+  }
+  .contact .right img {
+    width: 100%;
+    height: 100%;
+    padding: 0 5em 0 5em;
+    margin-left: 0;
+  }
+  .contact .left {
+    padding: 0;
+  }
+  .contact .left h1 {
+    width: 80%;
+    font-size: 1.6em;
+    margin-left: auto;
+    margin-top: 2em;
+  }
+  .contact .left .contact-info {
+    font-size: 1.5em;
+    margin: 0 3em 0 3em;
+  }
+  .showcase {
+    display: none;
+  }
+  .carousel {
+    display: block;
+    padding: 5em;
+  }
+  .carousel h2, .carousel h3, .carousel p {
+    font-size: .7em;
+  }
+  .carousel img {
+    height: 400px;
+    padding-bottom: 1em;
+  }
+  .gallery {
+    padding-left: 10em;
+    padding-right: 10em;
+    font-size: .8em;
+  }
+  .footer .col-lg-8 {
+    margin-left: 1em;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

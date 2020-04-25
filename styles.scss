@@ -1,0 +1,450 @@
+// color pallet
+$btnColor:#ffed9a;
+$bgColor: #f2f2f2;
+$primaryText: #565656;
+$secondText: #767676;
+$lightColor: #989898;
+
+body{
+  height: 100%;
+}
+//navbar 
+.navbar{
+  background-color:transparent;
+  padding-top: 0;
+  
+  //logo
+  .navbar-brand{
+    background-color: #fff;
+    margin-right: 0;
+    #logo{
+      margin-left: .4em;
+      max-width: 3.5em; 
+      padding: .5em;
+    }
+  }
+
+  .navbar-nav{
+    background-color: #fff;
+    padding-top: 1em;
+    padding-bottom:1em;
+
+    //nav tabs
+    .nav-item{
+      padding: 0 1em 0 1.5em;
+    }
+    .nav-link{
+      color: $primaryText;
+      font-size: 2em;
+    }
+    li { 
+      display: table-cell; 
+      position: relative; 
+      padding: .5em 0;
+    }
+    a:after {    
+      bottom: 0;
+      content: "";
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: $secondText;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+    a:hover:after { 
+      width: 100%; 
+      left: 0; 
+    }
+  
+  } 
+  
+  //toggler
+  .navbar-toggler-icon{
+    .fas{
+      color: #000;
+    }
+  }
+}
+ 
+// landing page 
+.home {
+  padding-top: 10em;
+  height: 100vh;
+
+  //landing page image
+  .right{
+    img{
+     max-width: 360px;
+    }
+  }
+}
+.home, .about, .contact{
+  //landing page text
+  .left{
+    h1, h2{
+      font-weight: normal;
+      color: $primaryText;
+      margin-top: 1em;
+      line-height: 1.3em;
+    }
+    h2{
+      margin-top: 9em;
+      font-size: 1.4em;
+      width: 95%;
+    }
+    .btn{
+      border: 1px solid $btnColor;
+      padding: .5em 1em .7em 1em;
+      margin-top: 2em;
+      color: #000;
+      font-size: 1.5em;
+      background-color: $btnColor;
+      border-radius: .7em;
+      a{
+        text-decoration: none;
+        color: #000;
+      }
+    }
+    .btn:hover{
+      background-color: $bgColor;
+      border: $primaryText solid 1px; 
+    }
+  }
+  
+}
+
+//about page
+.about{
+ 
+  img{
+    height: 100%;
+    padding-bottom: 3em;
+  }
+}
+ 
+//contact page
+.contact {
+  padding-top: 10em;
+  padding-bottom: 15em;
+  //contact text
+  .left{
+    h1{
+      width: 80%;
+    }
+    .contact-info{
+      font-size: 1.5em;
+      padding-top: 2em;
+      color: $secondText;
+      a{
+        color: $secondText;
+        font-weight: normal;
+        font-size: .8em;
+      }
+    }
+  }
+
+  //contact image
+  .right{
+    img{
+    height: 75%;
+   }
+  }
+}
+ 
+//showcase
+.showcase{
+  padding-top: 7em;
+  .showcase-image{
+    width: 20%;
+    padding-left: 1em;
+  }
+ .showcase-content{
+    padding: 2em 0 0 2em;
+    position: absolute;
+    right: 3em;
+    width: 35%;
+    h2, h3, p{
+      margin: 1em 0;
+      font-size: .9em;
+      a{
+        color: $primaryText;
+      }
+    }
+  }
+}
+.carousel{
+   display: none;
+}
+ 
+//gallery page
+.gallery{
+  margin-top: 4em;
+  padding-left: 4em;
+ 
+  .card{
+    margin: 2.5em 1.25em 0 1.25em;
+    a{
+      color: $primaryText;
+    } 
+  }
+  
+}
+
+.footer{
+  a{
+    text-decoration: none;
+    color: $primaryText;
+  }
+  li { 
+    display: table-cell; 
+    position: relative; 
+    padding: .5em 0;
+  }
+  a:after {    
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #989898;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+}
+ 
+
+
+@media only screen and (max-width: 990px){
+  
+  //tab navbar
+  .navbar{
+    padding:0;
+    width: 80%;     
+    font-size: .6em;
+    //tab logo 
+    .navbar-brand{
+      #logo{
+        max-width: 2.5em;
+      }
+    }
+    .nav-item{
+      .nav-link{
+        padding-right: 0;
+      }
+    }
+  }
+
+  // general home style
+  .home{
+    padding-left: 0;
+    // tab landing text
+    .left{
+      h1{
+        font-size: 1.5em;
+      }
+      .btn{
+        border: 1px solid $btnColor;
+        padding: .7em;
+        margin-top: 3em;
+        color: #000;
+        font-size: 1.2em;
+        background-color: $btnColor;
+        border-radius: 1em;
+      }
+    }
+    // tab landing image
+    .right{
+      padding-left: 1em;
+      img{
+        width: 90%;
+      }
+    }
+  
+  }
+
+  // tab about page
+  .about{
+   padding-bottom: 10em;
+   // tab about page text
+   .left{
+     font-size: .8em;
+   }
+   // tab about page image
+   .right{
+     padding-left: 6em;
+     img{
+       padding-top: 2em;
+       width: 100%;
+     }
+   }
+  }
+
+  //tab contact text
+  .contact{
+    .left{
+      h1{
+        font-size: 1.9em;  
+      }
+      .contact-info{
+        padding-top: .9em;
+      }
+    } 
+    .right{
+      img{
+        margin-left: 2em;
+        width: 90%;
+        height: 90%;
+      }
+    }
+    
+  }
+
+  //tab showcase
+  
+  .showcase {
+    .showcase-image{
+      width: 19%;
+    }
+    .showcase-content {
+      padding-top: 1em;
+      font-size: .8em;
+    }
+  }
+
+  // tab gallery
+  .gallery{
+    margin-top: 5em;
+    font-size: .6em;
+    .card-body{
+      padding-right: 0;
+      padding-left: 0;
+    } 
+  
+  }
+ 
+
+}
+	
+
+
+@media only screen and (max-width: 578px){
+    
+  //cell navbar
+  .navbar{
+    width: 100vw;
+    background-color: #fff;
+  }
+
+  //cell home page
+  .home{
+    padding-top: 5em;
+    //cell landing page text
+    .left{
+      padding: 0 2em 0 2em;
+      text-align: center;
+    } 
+    // cell landing image
+    .right{
+      img{
+        padding: 3em;
+      }
+    } 
+  }
+
+  //cell about page
+  .about{
+    .right{
+      padding: 0 3em 0 3em;
+      img{
+      padding: 4em 4em 2em 4em;
+    }
+    }
+    .left{
+      padding: 0 6em 0 6em;
+      h2{
+        font-size: 1em; 
+        margin-top: 0;
+      }
+    }
+    
+  }
+
+  //cell contact page
+  .contact{
+    padding-top: 5em;
+    .right{
+      .row{
+        padding-bottom: 0;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        padding: 0 5em 0 5em;
+        margin-left: 0;
+      }
+    } 
+    .left{
+      padding: 0;
+      h1{
+        width: 80%;
+        font-size: 1.6em;
+        margin-left: auto;
+        margin-top: 2em; 
+      }
+      .contact-info{
+        font-size: 1.5em;
+        margin: 0 3em 0 3em;
+      } 
+    }
+  }
+
+  // cell showcase
+  .showcase{
+    display: none;
+  }
+  .carousel{
+    display: block;
+    padding: 5em;
+    h2, h3, p{
+      font-size: .7em;
+    }
+    img{
+      height:400px;
+      padding-bottom: 1em;
+    }
+
+  }
+
+  // cell gallery
+  .gallery{
+    padding-left: 10em;
+    padding-right: 10em;
+    font-size: .8em;
+  }
+
+  //footer
+  .footer{
+    .col-lg-8{
+      margin-left: 1em;
+      
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
